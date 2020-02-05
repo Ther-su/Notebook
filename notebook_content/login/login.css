@@ -1,0 +1,67 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input {
+  margin:0;
+  padding:0;
+}
+img {
+  border:none;
+}
+/*顶部*/
+.top {
+  height:50px;
+}
+h2 {
+  float:right;
+  line-height: 50px;
+  padding-right: 40px;
+}
+.picture1 {
+  padding-top: 10px;
+  margin-left: 20px;
+}
+/*中部*/
+.middle {
+  height: 600px;
+  background-image: url("../img/back.jpg");
+}
+.picture2 {
+  padding-top: 4px;
+}
+.logo_box {
+  float:left;
+}
+.login_box {
+  float: right;
+  padding:80px 100px;
+  margin-right:200px;
+  margin-top:140px;
+  font-size: 15px;
+  background-color:white;
+  border:1px solid rgb(127, 131, 131)
+}
+.name_text,.pass_text {
+  height:30px;
+  width: 200px;
+  background-color: rgba(253, 253, 159, 0.897);
+  border:1px solid rgb(40, 206, 236);
+  border-radius: 4px;
+}
+.tiptext {
+  font-size: 6px;
+}
+.login_btn {
+  width:240px;
+  height:60px;
+  background-color: red;
+  border:none;
+  font-size: 16px;
+  color:white;
+  font-weight: bold;
+}
+/*底部*/
+.bottom {
+  background-color:rgb(187, 129, 241);
+  height:40px;
+}
+.top_text {
+  margin-top: 10px;
+}

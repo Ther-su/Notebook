@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>易笔记本</title>
+  <link href="nav.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="top1_box">
+  <div class="all">
+    <a href="../login/login.html" target="_blank" class="login">[登录}</a>
+    <p class="welcome">欢迎来到易笔记本</p>
+  </div>
+</div>
+<div class="top2_box">
+  <div class="all">
+    <div class="search_all_box"> 
+      <input type="text" class="search_all_text" id="input_search">
+      <input type="button" value="查找" class="search_btn" onclick="search_all()">
+    </div>
+  </div>
+</div>
+<div class="nav_box">
+  <div class="all">
+    <div class="nav1"><h3>开启笔记本</h3></div>
+    <div class="nav2">
+      <ul>
+        <li><a href="../main_page/main_page.html" target="content1">主页</a></li>
+        <li><a href="../add/add.html" target="content1">添加</a></li>
+        <li><a href="../search/search.html" target="content1">查找</a></li>  
+        <li><a href="../delete/del.html" target="content1">删除</a></li>
+        <li><a href="../show_all_note/show_all_note.html" target="content1">查看所有笔记</a></li>
+        <li><a href="../import/import_note.html" target="content1">导入笔记</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="shade" id="shade">
+  <div class="win">
+    <span><div id="search_result"></div></span>
+    <input type="button" value="确定" class="win_btn" onclick="win_off()">
+  </div>
+</div> 
+  <script src="nav.js"></script>
+</body>
+</html>

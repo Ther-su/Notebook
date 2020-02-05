@@ -1,0 +1,23 @@
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input {
+  margin:0;
+  padding:0;
+}
+.bottom_text1 {
+  float:left;
+  font-weight: bold;
+}
+.bottom_text2 {
+  float: right;
+  font-weight: bold;
+}
+.bottom_box {
+  height:56px;
+  line-height: 56px;
+  background-color: rgb(124, 218, 164);
+  margin-bottom: 0;
+}
+.all {
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}

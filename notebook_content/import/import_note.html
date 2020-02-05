@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>导入笔记</title>
+  <link href="import_note.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+<div class="import_box">
+  <div class="all_center">
+    <h1>开始导入笔记</h1><br><br><br>
+    <input type="button" value="开始导入" onclick="import_note()"class="sure_btn">
+  </div> 
+</div>
+<div class="shade" id="shade">
+  <div class="win">
+    <span><div id="tip_text"></div></span>
+    <input type="button" value="确定" class="win_btn" onclick="win_off()">
+  </div>
+</div> 
+  <script src="import_note.js"></script>
+</body>
+</html>

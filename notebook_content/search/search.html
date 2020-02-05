@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>查找</title>
+  <link href="search.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="search_box">
+  <div class="all_center">
+    <h1>开始查找笔记</h1><br><br>
+    <b>标题</b>&nbsp&nbsp&nbsp&nbsp
+    <input type="text" class="input_info" id="title_input"><br><br>
+    <b>日期</b>&nbsp&nbsp&nbsp&nbsp
+    <input type="date" class="input_info" id="time_input"><br><br>
+    <input type="button" value="确定查找" class="sure_btn" onclick="find()"><br><br>
+  </div>
+</div>
+<div class="shade" id="shade">
+  <div class="win">
+    <span><div id="tip_text"></div></span>
+    <input type="button" value="确定" class="win_btn" onclick="win_off()">
+  </div>
+</div> 
+  <script src="search.js"></script>
+</body>
+</html>
