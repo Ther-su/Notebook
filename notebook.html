@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="notebook.css" rel="stylesheet" type="text/css" />
+  <title>网页笔记本</title>
+</head>
+<body>
+  <div class="top1_box">
+    <div class="all">
+      <a href="login.html" target="_blank" class="login">[登录]</a>
+      <p class="welcome">欢迎来到易笔记本</p>
+    </div>
+  </div>
+  <div class="top2_box">
+    <div class="all">
+      <div class="search_all_box"> 
+        <input type="text" class="search_all_text" id="input_search">
+        <input type="button" value="查找" class="search_btn" onclick="search_all()">
+      </div>
+    </div>
+  </div>
+  <div class="nav_box">
+    <div class="all">
+      <div class="nav1"><h3>开启笔记本</h3></div>
+      <div class="nav2">
+        <ul>
+          <li><a href="javascript:void(0)" onclick="skip_main_page()">主页</a></li>
+          <li><a href="javascript:void(0)" onclick="skip_add()">添加</a></li>
+          <li><a href="javascript:void(0)" onclick="skip_search()">查找</a></li>  
+          <li><a href="javascript:void(0)" onclick="skip_del()">删除</a></li></li>
+          <li><a href="javascript:void(0)" onclick="skip_show_all_note()">查看所有笔记</a></li></li>
+          <li><a href="javascript:void(0)" onclick="skip_import_note()">导入笔记</a></li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="main_page_box" id="main_page_box">
+      <div class="all">
+        <div class="left_container">
+          <p class="left_letter"><a href="javascript:void(0)" onclick="skip_add()">开始添加笔记吧</a></p>
+        </div>
+        <div class="right_container"><a href="javascript:void(0)" onclick="skip_show_all_note()">看看我的笔记</a>
+        </div>
+      </div>
+    </div>
+    <div class="add_box" id="add_box">
+      <div class="all_center">
+        <h1>开始添加笔记</h1><br><br>
+        <b>标题</b>&nbsp&nbsp&nbsp&nbsp<input type="text" class="input_info" id="title_add"><br><br>
+        <b>日期</b>&nbsp&nbsp&nbsp&nbsp<input type="date" class="input_info" id="time_add"><br><br>
+        <b>笔记</b>&nbsp&nbsp&nbsp&nbsp<textarea cols="50" rows="10" placeholder="在这里输入内容..." id="text_add"></textarea><br><br>
+        <input type="button" value="确定添加" onclick="save()" class="sure_btn"/>
+      </div>
+    </div>
+    <div class="delete_box" id="delete_box">
+      <div class="all_center"> 
+        <h1>开始删除笔记</h1><br><br>
+        <b>标题</b>&nbsp&nbsp&nbsp&nbsp
+        <input type="text" class="input_info" id="title_delete"><br><br>
+        <b>日期</b>&nbsp&nbsp&nbsp&nbsp
+        <input type="date" class="input_info" id="time_delete"><br><br>
+        <input type="button" value="确定删除" class="sure_btn" onclick="remove()">
+      </div>
+    </div>
+    <div class="search_box" id="search_box">
+      <div class="all_center">
+        <h1>开始查找笔记</h1><br><br>
+        <b>标题</b>&nbsp&nbsp&nbsp&nbsp
+        <input type="text" class="input_info" id="title_search"><br><br>
+        <b>日期</b>&nbsp&nbsp&nbsp&nbsp
+        <input type="date" class="input_info" id="time_search"><br><br>
+        <input type="button" value="确定查找" class="sure_btn" onclick="find()"><br><br>
+      </div>
+    </div>
+    <div class="note_box" id="note_box">
+      <div class="all_center">
+        <h1>您已建立的笔记</h1><br><br>
+        <div id="list"></div>
+      </div>
+    </div>
+    <div class="import_box" id="import_box">
+      <div class="all_center">
+        <h1>开始导入笔记</h1><br><br><br>
+        <input type="button" value="开始导入" onclick="import_note()"class="sure_btn">
+      </div> 
+    </div>
+  </div>
+  <div class="bottom_box">
+    <div class="all">
+      <div class="bottom_text1">
+        <p>年轻人最喜爱的网页笔记本</p>
+      </div>
+      <div class="bottom_text2">
+        <p>如果您有什么问题，欢迎联系我们</p>
+      </div>
+    </div>
+  </div>
+  <div class="shade" id="shade">
+    <div class="win">
+      <span><div id="tip_text"></div></span>
+      <input type="button" value="确定" class="win_btn" onclick="win_off()">
+    </div>
+  </div>
+  <script src="notebook.js"></script>
+</body>
+</html>
